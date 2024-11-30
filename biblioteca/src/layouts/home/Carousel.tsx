@@ -1,3 +1,5 @@
+import { ReturnBook } from "./ReturnBook";
+
 export const Carousel = () => {
     return (
         <div className="container mt-5" style={{ height: 550 }}>
@@ -9,44 +11,23 @@ export const Carousel = () => {
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <div className="row d-flex justify-content-center align-items-center">
-                            <div className="col-xs-6 col-sm-6 col-lg-3 mb-3">
-                                <div className="text-center">
-                                    <img src={require("../../Images/BooksImages/gatsby.jpg")} alt="Gatsby book cover"
-                                        width='151' height='233' />
-
-                                    <h6 className="mt-2">The Great Gatsby</h6>
-                                    <p>F. Scott Fitzgerald</p>
-                                    <a href="" className="btn main-color text-white">Reserve</a>
-                                </div>
-                            </div>
+                            <ReturnBook />
+                            <ReturnBook />
+                            <ReturnBook />
                         </div>
                     </div>
                     <div className="carousel-item">
                         <div className="row d-flex justify-content-center align-items-center">
-                            <div className="col-xs-6 col-sm-6 col-lg-3 mb-3">
-                                <div className="text-center">
-                                    <img src={require("../../Images/BooksImages/gatsby.jpg")} alt="Gatsby book cover"
-                                        width='151' height='233' />
-
-                                    <h6 className="mt-2">The Great Gatsby</h6>
-                                    <p>F. Scott Fitzgerald</p>
-                                    <a href="" className="btn main-color text-white">Reserve</a>
-                                </div>
-                            </div>
+                            <ReturnBook />
+                            <ReturnBook />
+                            <ReturnBook />
                         </div>
                     </div>
                     <div className="carousel-item">
                         <div className="row d-flex justify-content-center align-items-center">
-                            <div className="col-xs-6 col-sm-6 col-lg-3 mb-3">
-                                <div className="text-center">
-                                    <img src={require("../../Images/BooksImages/gatsby.jpg")} alt="Gatsby book cover"
-                                        width='151' height='233' />
-
-                                    <h6 className="mt-2">The Great Gatsby</h6>
-                                    <p>F. Scott Fitzgerald</p>
-                                    <a href="" className="btn main-color text-white">Reserve</a>
-                                </div>
-                            </div>
+                            <ReturnBook />
+                            <ReturnBook />
+                            <ReturnBook />
                         </div>
                     </div>
 
@@ -66,14 +47,7 @@ export const Carousel = () => {
             {/* Mobile */}
             <div className="d-lg-none mt-3">
                 <div className="row d-flex justify-content-center align-items-center">
-                    <div className="text-center">
-                        <img src={require("../../Images/BooksImages/gatsby.jpg")} alt="Gatsby book cover"
-                            width='151' height='233' />
-
-                        <h6 className="mt-2">The Great Gatsby</h6>
-                        <p>F. Scott Fitzgerald</p>
-                        <a href="" className="btn main-color text-white">Reserve</a>
-                    </div>
+                    <ReturnBook />
                 </div>
             </div>
             <div className="homepage-carousel-title mt-3">
