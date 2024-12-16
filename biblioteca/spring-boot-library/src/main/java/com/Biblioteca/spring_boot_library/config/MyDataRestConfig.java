@@ -13,6 +13,7 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
     
     private String theAllowedOrigins = "http://localhost:3000";
 
+    @Override
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config, CorsRegistry cors) {
         HttpMethod[] theUnsupportedActions = {HttpMethod.PUT, HttpMethod.POST, HttpMethod.DELETE, HttpMethod.PATCH};
         config.exposeIdsFor(Book.class);
