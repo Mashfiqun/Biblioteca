@@ -4,7 +4,7 @@ class BookModel {
     author?: string;
     description?: string;
     copies?: number;
-    copiesAvailable:number;
+    copiesAvailable?:number;
     category?: string;
     img?: string;
 

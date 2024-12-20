@@ -43,7 +43,7 @@ export const Carousel = () => {
             setIsLoading(false);
             setHttpError(error.message);
         })
-    }, [books, isLoading, httpError]);
+    }, []);
 
     if (isLoading) {
         return (

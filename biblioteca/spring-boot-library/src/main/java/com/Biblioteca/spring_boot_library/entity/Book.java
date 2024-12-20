@@ -1,9 +1,8 @@
 package com.Biblioteca.spring_boot_library.entity;
 
-import lombok.Data;
 import jakarta.persistence.*;
+import lombok.Data;
 
-import jakarta.persistence.GenerationType;
 @Entity
 @Table(name = "book")
 @Data
