@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const logo = require("../../Images/logo.png")
 export const Navbar = () => {
     return (
@@ -14,10 +16,10 @@ export const Navbar = () => {
                 <div className='collapse navbar-collapse' id='navbarNavDropdown'>
                     <ul className='navbar-nav'>
                         <li className='nav-item'>
-                            <a href="" className='nav-link'>Home</a>
+                            <NavLink to="/home" className='nav-link'>Home</NavLink>
                         </li>
                         <li className='nav-item'>
-                            <a href="" className='nav-link'>Search</a>
+                            <NavLink to="/search" className='nav-link'>Search</NavLink>
                         </li>
                     </ul>
                     <ul className='navbar-nav ms-auto'>
