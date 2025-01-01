@@ -1,8 +1,15 @@
 package com.Biblioteca.spring_boot_library.controller;
 
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
-import com.Biblioteca.spring_boot_library.requestmodels.ReviewRequest;
+import com.Biblioteca.spring_boot_library.requestmodel.ReviewRequest;
 import com.Biblioteca.spring_boot_library.service.ReviewService;
 import com.Biblioteca.spring_boot_library.utils.ExtractJWT;
 
@@ -11,7 +18,7 @@ import com.Biblioteca.spring_boot_library.utils.ExtractJWT;
 @RequestMapping("/api/reviews")
 public class ReviewController {
 
-    private final ReviewService reviewService;
+    private ReviewService reviewService;
 
     public ReviewController (ReviewService reviewService) {
         this.reviewService = reviewService;

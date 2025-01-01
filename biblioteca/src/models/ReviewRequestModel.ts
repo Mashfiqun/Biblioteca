@@ -2,7 +2,6 @@ class ReviewRequestModel {
     rating: number;
     bookId: number;
     reviewDescription?: string;
-
     constructor(rating: number, bookId: number, reviewDescription: string) {
             
             this.rating = rating;
@@ -10,5 +9,4 @@ class ReviewRequestModel {
             this.reviewDescription = reviewDescription;
     }
 }
-
 export default ReviewRequestModel;
