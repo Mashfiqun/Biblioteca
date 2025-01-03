@@ -36,7 +36,12 @@ export const Navbar = () => {
                         <li className='nav-item'>
                         <NavLink to="/shelf" className='nav-link'>Shelf</NavLink>
                         </li>
-                    }
+                        }
+                                            
+                        {authState.isAuthenticated && authState.accessToken?.claims?.userType === 'admin' && 
+                        <li className='nav-item'>
+                            <NavLink to='/admin' className='nav-link'>Admin</NavLink>
+                        </li>}
                     </ul>
                     <ul className='navbar-nav ms-auto'>
                     {!authState.isAuthenticated ?
@@ -50,9 +55,6 @@ export const Navbar = () => {
                     
                     }
 
-                        <li className='nav-item m-1'>
-                            <a type='button' href="" className='btn btn-outline-light'>Sign up</a>
-                        </li>
                     </ul>
                 </div>
             </div>
