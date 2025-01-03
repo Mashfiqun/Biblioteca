@@ -52,3 +52,14 @@ background-color: #37003c ;
     pointer-events: none;
     cursor: default;
  }
+
+.btn{
+    color: #fff;
+    background-color: #37003c ;
+    border-color: #fff ;
+}
+.btn:hover, .btn:focus, .btn:active, .btn.active, .open>.dropdown-toggle.btn {
+    color: #37003c ;
+    background-color: #ffffffa8;
+    border-color: #37003c ;
+}

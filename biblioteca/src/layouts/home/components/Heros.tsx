@@ -20,10 +20,10 @@ export const Heros = () => {
                                 Whether it is to learn a new skill or grow within one, we will be able to provide the top content for you!
                             </p>
                             {authState?.isAuthenticated?
-                             <Link type='button' className='btn main-color btn-lg text-white'
+                             <Link type='button' className='btn main-color btn-lg'
                               to='search'>Explore Top Books</Link>
                             :
-                            <Link to="/login" className="btn main-color btn-lg text-white">Sign up</Link>
+                            <Link to="/login" className="btn main-color btn-lg">Sign up</Link>
                         }
                            
                         </div>
@@ -57,10 +57,10 @@ export const Heros = () => {
                                 Whether it is to learn a new skill or grow within one, we will be able to provide the top content for you!
                             </p>
                             {authState?.isAuthenticated ?
-                             <Link type='button' className='btn main-color btn-lg text-white' 
+                             <Link type='button' className='btn main-color btn-lg' 
                               to='search'>Explore top Books</Link>
                             :
-                            <Link to="/login" className="btn main-color btn-lg text-white">Sign up</Link>
+                            <Link to="/login" className="btn main-color btn-lg">Sign up</Link>
                         }
                            
                         </div>

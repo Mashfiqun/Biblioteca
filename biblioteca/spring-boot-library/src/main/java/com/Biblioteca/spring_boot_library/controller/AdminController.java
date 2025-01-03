@@ -7,7 +7,7 @@ import com.Biblioteca.spring_boot_library.requestmodels.AddBookRequest;
 import com.Biblioteca.spring_boot_library.service.AdminService;
 import com.Biblioteca.spring_boot_library.utils.ExtractJWT;
 
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("https://localhost:3000")
 @RestController
 @RequestMapping("/api/admin")
 public class AdminController {

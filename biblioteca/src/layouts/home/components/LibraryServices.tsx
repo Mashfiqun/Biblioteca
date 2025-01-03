@@ -16,11 +16,11 @@ export const LibraryServices = () => {
                     </p>
                     <div className="d-grid gap-2 justify-content-md-start mb-4 mb-lg-3">
                         {authState?.isAuthenticated ?
-                          <Link to='/messages' type='button' className='btn main-color btn-lg px-4 me-md-2 fw-bold text-white'>
+                          <Link to='/messages' type='button' className='btn main-color btn-lg px-4 me-md-2 fw-bold'>
                             Library Services
                           </Link>
                           :
-                          <Link to="" className="btn main-color btn-lg text-white">Sign up</Link>
+                          <Link to="" className="btn main-color btn-lg">Sign up</Link>
 
                     }
                         
